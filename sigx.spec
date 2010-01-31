@@ -53,9 +53,11 @@ This package contains development files for %name.
 %prep
 %setup -qn %{name}
 
+sed -i -e 's#\/lib#\/%{_lib}#' SConstruct
+
 %build
 %setup_compile_flags
-%scons PREFIX=%{_prefix} LIBDIR=%{_libdir} LIBINCLUDEDIR=%{_libdir}/sigx-2.0
+%scons PREFIX=%{_prefix}
 
 %install
 rm -rf %buildroot
