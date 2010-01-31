@@ -1,7 +1,7 @@
 Summary: An interthread communication library
 Name: sigx
 Version: 2.0.2
-Release: %mkrel 1
+Release: %mkrel 2
 License: LGPLv2+
 Group: Sound
 Source0: http://triendl.info/sigx/%{name}-%{version}.tar.bz2
@@ -53,7 +53,7 @@ This package contains development files for %name.
 %prep
 %setup -qn %{name}
 
-sed -i -e 's#\/lib#\/%{_lib}#' SConstruct
+sed -i -e 's#\/lib#\/%{_lib}#' SConstruct sigx.pc.in
 
 %build
 %setup_compile_flags
