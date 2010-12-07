@@ -1,7 +1,7 @@
 Summary: An interthread communication library
 Name: sigx
 Version: 2.0.2
-Release: %mkrel 2
+Release: %mkrel 3
 License: LGPLv2+
 Group: Sound
 Source0: http://triendl.info/sigx/%{name}-%{version}.tar.bz2
