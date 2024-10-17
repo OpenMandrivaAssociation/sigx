@@ -9,7 +9,7 @@ BuildRequires: gtkmm2.4-devel
 BuildRequires: libsigc++2.0-devel
 BuildRequires: scons
 BuildRequires: boost-devel
-URL: http://triendl.info/sigx
+URL: https://triendl.info/sigx
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
